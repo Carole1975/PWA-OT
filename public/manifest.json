@@ -1,0 +1,29 @@
+{
+  "name": "Pwa OT", // le nom de votre PWA
+  "short_name": "OT", // si le nom de votre PWA est trop long, la navigateur se servira de celui ci.
+  "icons": [{
+    "src": "icon.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "icon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "icon.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "icon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }],  // les icons (ecrans d'accueil) !
+  "start_url": "index.html", // la page de démarage par default
+  "display": "standalone", // la façon de lire votre PWA
+  "background_color": "#A6DEC1", // couleur de fond
+  "theme_color": "##A6DEC1" // couleur du theme
+}

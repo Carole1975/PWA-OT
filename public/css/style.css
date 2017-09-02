@@ -1,0 +1,12 @@
+body{
+	background: #A6DEC1; //#8ED6DE; #C6DB27; #F7C738; 
+}
+.row{
+	text-align: center;
+	font-size: 20px;
+}
+#logo{
+	max-width: 100%;
+	height: auto;
+}
+				
