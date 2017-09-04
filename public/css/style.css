@@ -9,4 +9,9 @@ body{
 	max-width: 100%;
 	height: auto;
 }
+#cdf_map{
+  	height: 690px;
+  	width: 680px;
+  	margin-left: 3%;
+  }
 				
