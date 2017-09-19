@@ -6,39 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
   <meta name="theme-color" content="#C1E2DE">
+  
   <title>Mémoire en cache test</title>
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
   crossorigin=""/>
+  
   <link rel="stylesheet" href="vex-3.0.0/dist/css/vex.css"/>
   <link rel="stylesheet" href="vex-3.0.0/dist/css/vex-theme-os.css"/>
   <link rel="stylesheet" href="css/main.css"/>
+  
   <link rel="stylesheet" href="css/style.css"/>
+  
   <link rel="manifest" href="manifest.json"/>
+  
   <script async>
-  function loadCSS(e,t,n){
-    "use strict";
-    function r() {for(var t, i=0; i<d.length; i++)d[i].href&&d[i].href.indexOf(e)>-1&&(t=!0);t?o.media=n||"all":setTimeout(r)}var o=window.document.createElement("link"),i=t||window.document.getElementsByTagName("script")[0],d=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x", i.parentNode.insertBefore(o,i),r(),o}</script>
-    <script async>
+    function loadCSS(e,t,n){
+      "use strict";
+      function r() {for(var t, i=0; i<d.length; i++)d[i].href&&d[i].href.indexOf(e)>-1&&(t=!0);t?o.media=n||"all":setTimeout(r)}var o=window.document.createElement("link"),i=t||window.document.getElementsByTagName("script")[0],d=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x", i.parentNode.insertBefore(o,i),r(),o
+    }
+  </script>
+  <script async>
     loadCSS("css/main.css");
     loadCSS("css/style.css");
-    </script>
-    </head>
+  </script>
 
-    <body class="fluid-container">
-    <header>
+
+</head>
+
+<body class="fluid-container">
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <img id="logo" src="assets/image/saingo.png" class="img-fluid" alt="Responsive image">
+      <img id="logo" src="assets/image/saingo.png" class="img-fluid" alt="Responsive image">
     </nav>
-    </header>
+  </header>
 
 
-    <div class="row">
+  <div class="row">
     <div class="col-12">Accueil</div>
-    </div>
+  </div>
 
-    <script type="text/javascript" async>
+  <script type="text/javascript" async>
     if ("serviceWorker" in navigator){
       //enregistrement du serviceWorker sw.js
       //avec comme scope '/' (racine);
@@ -47,50 +58,73 @@
       .then(function(reg){
         console.log("Registration succeeded. Scope is" + reg.scope);
       })
-
       // si ce n'est pas bon...
       .catch(function(error){
         console.log("Registration failed with" + error);
       });
     };
-    </script>
+  </script>
 
-    <div id="cdf_map">
-    </div>
+  <div id="cdf_map">
+  </div>
 
 
-    <div class="btn-group">
+  <div class="btn-group">
     <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Catégories
-    <span class="caret"></span>
+      Catégories
+      <span class="caret"></span>
     </button>
 
     <ul class="dropdown-menu">
-    <li><a href="#">Evènements</a></li>
-    <li><a href="#">Carte territoire</a></li>
-    <li><a href="#">Où manger - Où dormir</a></li>
-    <li><a href="#">Infos pratiques</a></li>
+      <li><a href="#">Evènements</a></li>
+      <li><a href="#">Carte territoire</a></li>
+      <li><a href="#">Où manger - Où dormir</a></li>
+      <li><a href="#">Infos pratiques</a></li>
     </ul>
 
-    </div>
+  </div>
 
 
-
-
-    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
     integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
     crossorigin=""></script>
-    <script src="js/accueil.js">
+
+    <script type='text/javascript' src="js/leaflet-beautify-marker-icon.js"></script>
+    <script type='text/javascript' src="js/leaflet-beautify-marker.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="main.58fec847.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous" async></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type='text/javascript' src="http://rawgit.com/jasonday/jQuery-UI-Dialog-extended/master/jquery.dialogOptions.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" async></script>
+    
+    <script src="js/accueil.js"></script>
+    
+    
+    <script src="main.58fec847.js" async></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous" async></script>
+    
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous" async></script>
 
 
-    </body>
+</body>
 
-    </html>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
