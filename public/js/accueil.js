@@ -8,20 +8,25 @@
         },
 
         getGalerie: function(url) {
-            $.ajax({
-                url: url,
-                success: this.initmap,
-                error: function(err) {
-                    if (err) {
-                        console.log(err);
-                    };
-                }
-            });
+            // $.ajax({
+            //     url: url,
+            //     success: this.initmap,
+            //     error: function(err) {
+            //         if (err) {
+            //             console.log(err);
+            //         };
+            //     }
+            // });
+            fetch(url)
+            .then((data) => {
+              this.initmap(data);
+            })
         },
 
 
       // carte interactive 
       initmap: function(data) {
+        console.log(JSON.stringify(data,undefined,2));
         var map = new L.Map('cdf_map', { fullscreenControl: true });
         var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
         var osmAttrib = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © CloudMade';

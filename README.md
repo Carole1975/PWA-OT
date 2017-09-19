@@ -1,8 +1,8 @@
-  git clone git@github.com:Carole1975/PWA-OT.git
-  cd PWA-OT
-  npm install
-  npm install leaflet
-  node server.js
+  git clone git@github.com:Carole1975/PWA-OT.git<br>
+  cd PWA-OT<br>
+  npm install<br>
+  npm install leaflet<br>
+  node server.js<br>
 
 
 # PWA-OT
