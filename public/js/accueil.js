@@ -1,13 +1,13 @@
 (function(){
-    console.log("map");
-    
-    var app = {
-        init: function() {
-            this.url = "https://raw.githubusercontent.com/Carole1975/PWA-OT/master/public/data/galerie.json";
-            this.getGalerie(app.url);
-        },
+  console.log("map");
+  
+  var app = {
+    init: function() {
+      this.url = "https://raw.githubusercontent.com/Carole1975/PWA-OT/master/public/data/galerie.json";
+      this.getGalerie(app.url);
+    },
 
-        getGalerie: function(url) {
+    getGalerie: function(url) {
             // $.ajax({
             //     url: url,
             //     success: this.initmap,
@@ -21,7 +21,7 @@
             .then((data) => {
               this.initmap(data);
             })
-        },
+          },
 
 
       // carte interactive 
@@ -40,45 +40,45 @@
           if (map.isFullscreen()) {
             bouton.remove();
             return;
-        } else {
+          } else {
             map.remove();
             app.init();
-        }
-    });
-    }
+          }
+        });
+      }
 
-};
+    };
 
     //Création des marqueurs
-     var Marker = function(text, borderColor, backgroundColor, textColor) {
-         this.text = text;
-         this.iconSize = [15, 15];
-         this.borderColor = borderColor;
-         this.backgroundColor = backgroundColor;
-         this.textColor = textColor;
-         this.isAlphaNumericIcon = true;
-         this.innerIconStyle = 'margin:auto';
-     };
+    var Marker = function(text, borderColor, backgroundColor, textColor) {
+     this.text = text;
+     this.iconSize = [15, 15];
+     this.borderColor = borderColor;
+     this.backgroundColor = backgroundColor;
+     this.textColor = textColor;
+     this.isAlphaNumericIcon = true;
+     this.innerIconStyle = 'margin:auto';
+   };
 
-    // //circuit ocre
-     //for (i = 0; i < data.ocre.length; i++) {
+     //circuit ocre
+     for (i = 0; i < data.ocre.length; i++) {
                  //marqueurs
-                 //var markersOcre = new Marker(data.ocre[i].marqueur, '#FF5200', "rgba(255, 82, 0, 0.5)", '#000');
-                 //var latOcre = data.ocre[i].geoloc.lat;
-                 //var longOcre = data.ocre[i].geoloc.lng;
-                 //markersOcre = L.marker([latOcre, longOcre], {
-                     //icon: L.BeautifyIcon.icon({
-                         //iconSize: markersOcre.iconSize,
-                         //borderColor: markersOcre.borderColor,
-                         //backgroundColor: markersOcre.backgroundColor,
-                         //isAlphaNumericIcon: markersOcre.isAlphaNumericIcon,
-                         //text: markersOcre.text,
-                         //textColor: markersOcre.textColor,
-                         //innerIconStyle: markersOcre.innerIconStyle
-                     //})
-                 //}).addTo(map);
+                 var markersOcre = new Marker(data.ocre[i].marqueur, '#FF5200', "rgba(255, 82, 0, 0.5)", '#000');
+                 var latOcre = data.ocre[i].geoloc.lat;
+                 var longOcre = data.ocre[i].geoloc.lng;
+                 markersOcre = L.marker([latOcre, longOcre], {
+                   icon: L.BeautifyIcon.icon({
+                     iconSize: markersOcre.iconSize,
+                     borderColor: markersOcre.borderColor,
+                     backgroundColor: markersOcre.backgroundColor,
+                     isAlphaNumericIcon: markersOcre.isAlphaNumericIcon,
+                     text: markersOcre.text,
+                     textColor: markersOcre.textColor,
+                     innerIconStyle: markersOcre.innerIconStyle
+                   })
+                 }).addTo(map);
 
-             //};
+               };
 
 
     // //sentier
@@ -112,7 +112,7 @@
 
 
     app.init();
-})();
+  })();
 
 
 
