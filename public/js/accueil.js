@@ -8,25 +8,61 @@
     },
 
     getGalerie: function(url) {
-            // $.ajax({
-            //     url: url,
-            //     success: this.initmap,
-            //     error: function(err) {
-            //         if (err) {
-            //             console.log(err);
-            //         };
-            //     }
-            // });
-            fetch(url)
-            .then((data) => {
-              this.initmap(data);
-            })
+          //   $.ajax({
+          //       url: url,
+          //       success: this.initmap,
+          //       error: function(err) {
+          //           if (err) {
+          //               console.log(err);
+          //           };
+          //       }
+          //   });
+          // },
+
+          fetch('../data/galerie.json')
+            // .then((data) => {
+            //   this.initmap(data);
+            // })
+            .then(  
+              function(response) {  
+                if (response.status !== 200) {  
+                  console.log('Looks like there was a problem. Status Code: ' +  
+                    response.status);  
+                  return;  
+                }
+
+            // Examine the text in the response  
+            response.json().then(function(data) {  
+              var map = new L.Map('cdf_map', { fullscreenControl: true });
+              var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+              var osmAttrib = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © CloudMade';
+
+              var osm = new L.TileLayer(osmUrl, { minZoom: 10, maxZoom: 19, attribution: osmAttrib });
+
+              map.setView(new L.LatLng(43.1083, 0.7234), 16);
+              map.addLayer(osm);
+              map.scrollWheelZoom.disable();
+              map.on('fullscreenchange', function() {
+                if (map.isFullscreen()) {
+                  bouton.remove();
+                  return;
+                } else {
+                  map.remove();
+                  app.init();
+                }
+              });
+            });  
+          }  
+          )  
+            .catch(function(err) {  
+              console.log('Fetch Error :-S', err);  
+            });
+
           },
 
 
       // carte interactive 
       initmap: function(data) {
-        console.log(JSON.stringify(data,undefined,2));
         var map = new L.Map('cdf_map', { fullscreenControl: true });
         var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
         var osmAttrib = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © CloudMade';
@@ -61,7 +97,7 @@
    };
 
      //circuit ocre
-     for (i = 0; i < data.ocre.length; i++) {
+     for (i = 0; i < this.length; i++) {
                  //marqueurs
                  var markersOcre = new Marker(data.ocre[i].marqueur, '#FF5200', "rgba(255, 82, 0, 0.5)", '#000');
                  var latOcre = data.ocre[i].geoloc.lat;
