@@ -39,65 +39,11 @@
 
               var osm = new L.TileLayer(osmUrl, { minZoom: 10, maxZoom: 19, attribution: osmAttrib });
 
-              map.setView(new L.LatLng(43.1083, 0.7234), 16);
+              map.setView(new L.LatLng(43.1100, 0.7300), 15);
               map.addLayer(osm);
               map.scrollWheelZoom.disable();
-              map.on('fullscreenchange', function() {
-                if (map.isFullscreen()) {
-                  bouton.remove();
-                  return;
-                } else {
-                  map.remove();
-                  app.init();
-                }
-              });
-            });  
-          }  
-          )  
-            .catch(function(err) {  
-              console.log('Fetch Error :-S', err);  
-            });
-
-          },
-
-
-      // carte interactive 
-      initmap: function(data) {
-        var map = new L.Map('cdf_map', { fullscreenControl: true });
-        var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-        var osmAttrib = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © CloudMade';
-
-        var osm = new L.TileLayer(osmUrl, { minZoom: 10, maxZoom: 19, attribution: osmAttrib });
-
-        map.setView(new L.LatLng(43.1083, 0.7234), 16);
-        map.addLayer(osm);
-        map.scrollWheelZoom.disable();
-        map.on('fullscreenchange', function() {
-          if (map.isFullscreen()) {
-            bouton.remove();
-            return;
-          } else {
-            map.remove();
-            app.init();
-          }
-        });
-      }
-
-    };
-
-    //Création des marqueurs
-    var Marker = function(text, borderColor, backgroundColor, textColor) {
-     this.text = text;
-     this.iconSize = [15, 15];
-     this.borderColor = borderColor;
-     this.backgroundColor = backgroundColor;
-     this.textColor = textColor;
-     this.isAlphaNumericIcon = true;
-     this.innerIconStyle = 'margin:auto';
-   };
-
-     //circuit ocre
-     for (i = 0; i < this.length; i++) {
+              //circuit ocre
+              for (i = 0; i < data.ocre.length; i++) {
                  //marqueurs
                  var markersOcre = new Marker(data.ocre[i].marqueur, '#FF5200', "rgba(255, 82, 0, 0.5)", '#000');
                  var latOcre = data.ocre[i].geoloc.lat;
@@ -115,10 +61,65 @@
                  }).addTo(map);
 
                };
+               map.on('fullscreenchange', function() {
+                if (map.isFullscreen()) {
+                  bouton.remove();
+                  return;
+                } else {
+                  map.remove();
+                  app.init();
+                }
+              });
+             });  
+          }  
+          )  
+            .catch(function(err) {  
+              console.log('Fetch Error :-S', err);  
+            });
+
+          },
 
 
-    // //sentier
-    // var latlngsOcre = data.ocre[0].sentier;
+      // // carte interactive 
+      // initmap: function(data) {
+      //   var map = new L.Map('cdf_map', { fullscreenControl: true });
+      //   var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+      //   var osmAttrib = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, Imagery © CloudMade';
+
+      //   var osm = new L.TileLayer(osmUrl, { minZoom: 10, maxZoom: 19, attribution: osmAttrib });
+
+      //   map.setView(new L.LatLng(43.1083, 0.7234), 16);
+      //   map.addLayer(osm);
+      //   map.scrollWheelZoom.disable();
+      //   map.on('fullscreenchange', function() {
+      //     if (map.isFullscreen()) {
+      //       bouton.remove();
+      //       return;
+      //     } else {
+      //       map.remove();
+      //       app.init();
+      //     }
+      //   });
+      // }
+
+    };
+
+    //Création des marqueurs
+    var Marker = function(text, borderColor, backgroundColor, textColor) {
+     this.text = text;
+     this.iconSize = [15, 15];
+     this.borderColor = borderColor;
+     this.backgroundColor = backgroundColor;
+     this.textColor = textColor;
+     this.isAlphaNumericIcon = true;
+     this.innerIconStyle = 'margin:auto';
+   };
+
+
+
+
+     //sentier
+    // var latlngsOcre = this.ocre[0].sentier;
     // var polylineOcre = L.polyline(latlngsOcre, { color: '#FF5200' }).addTo(map);
 
 
