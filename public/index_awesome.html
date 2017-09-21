@@ -9,11 +9,11 @@
   
   <title>Mémoire en cache test</title>
   
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css"/>
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css"/>
-  <link rel="stylesheet" href="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+  integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+  crossorigin=""/>
   
   <link rel="stylesheet" href="vex-3.0.0/dist/css/vex.css"/>
   <link rel="stylesheet" href="vex-3.0.0/dist/css/vex-theme-os.css"/>
@@ -49,7 +49,7 @@
     <div class="col-12">Accueil</div>
   </div>
 
-  <script type="text/javascript" async>
+  <!-- <script type="text/javascript" async>
     if ("serviceWorker" in navigator){
       //enregistrement du serviceWorker sw.js
       //avec comme scope '/' (racine);
@@ -63,7 +63,7 @@
         console.log("Registration failed with" + error);
       });
     };
-  </script>
+  </script> -->
 
   <div id="cdf_map">
   </div>
@@ -89,15 +89,19 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" async></script>
-    <!-- <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" async></script>
-    <script type='text/javascript' src="http://rawgit.com/jasonday/jQuery-UI-Dialog-extended/master/jquery.dialogOptions.js" async></script> -->
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" async></script>
+    <script type='text/javascript' src="http://rawgit.com/jasonday/jQuery-UI-Dialog-extended/master/jquery.dialogOptions.js" async></script>
 
-    <script type='text/javascript' src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
-    <script type='text/javascript' src="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+    integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+    crossorigin="" async></script>
+
+    <script type='text/javascript' src="js/leaflet-beautify-marker-icon.js" async></script>
+    <script type='text/javascript' src="js/leaflet-beautify-marker.js" async></script>
     <!-- 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" async></script>
      -->
-    <script src="js/accueil.js" async></script>
+    <script src="js/accueil_awesome.js" async></script>
     
     
     <script src="main.58fec847.js" async></script>

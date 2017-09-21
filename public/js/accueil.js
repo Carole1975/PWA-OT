@@ -45,20 +45,23 @@
               //circuit ocre
               for (i = 0; i < data.ocre.length; i++) {
                  //marqueurs
-                 var markersOcre = new Marker(data.ocre[i].marqueur, '#FF5200', "rgba(255, 82, 0, 0.5)", '#000');
                  var latOcre = data.ocre[i].geoloc.lat;
                  var longOcre = data.ocre[i].geoloc.lng;
-                 markersOcre = L.marker([latOcre, longOcre], {
-                   icon: L.BeautifyIcon.icon({
-                     iconSize: markersOcre.iconSize,
-                     borderColor: markersOcre.borderColor,
-                     backgroundColor: markersOcre.backgroundColor,
-                     isAlphaNumericIcon: markersOcre.isAlphaNumericIcon,
-                     text: markersOcre.text,
-                     textColor: markersOcre.textColor,
-                     innerIconStyle: markersOcre.innerIconStyle
-                   })
-                 }).addTo(map);
+                 L.marker([latOcre,longOcre], {icon: L.AwesomeMarkers.icon({icon: 'coffee', markerColor: 'orange', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 // var markersOcre = new Marker(data.ocre[i].marqueur, '#FF5200', "rgba(255, 82, 0, 0.5)", '#000');
+                 // var latOcre = data.ocre[i].geoloc.lat;
+                 // var longOcre = data.ocre[i].geoloc.lng;
+                 // markersOcre = L.marker([latOcre, longOcre], {
+                 //   icon: L.BeautifyIcon.icon({
+                 //     iconSize: markersOcre.iconSize,
+                 //     borderColor: markersOcre.borderColor,
+                 //     backgroundColor: markersOcre.backgroundColor,
+                 //     isAlphaNumericIcon: markersOcre.isAlphaNumericIcon,
+                 //     text: markersOcre.text,
+                 //     textColor: markersOcre.textColor,
+                 //     innerIconStyle: markersOcre.innerIconStyle
+                 //   })
+                 // }).addTo(map);
 
                };
                map.on('fullscreenchange', function() {
