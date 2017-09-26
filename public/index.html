@@ -11,7 +11,11 @@
   
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
   
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css"/>
+  <!--<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css"/>-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+  <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.mapbox.css' rel='stylesheet' />
+  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/css/font-awesome.min.css' rel='stylesheet' />
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css"/>
   <link rel="stylesheet" href="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css"/>
   
@@ -65,6 +69,10 @@
     };
   </script>
 
+  <div>
+    <button id="MyLocation" class="myloc">Ma position</button>
+  </div><br>
+
   <div id="cdf_map">
   </div>
 
@@ -92,7 +100,10 @@
     <!-- <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" async></script>
     <script type='text/javascript' src="http://rawgit.com/jasonday/jQuery-UI-Dialog-extended/master/jquery.dialogOptions.js" async></script> -->
 
-    <script type='text/javascript' src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+    <!--<script type='text/javascript' src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>-->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js'></script>
     <script type='text/javascript' src="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
     <!-- 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" async></script>

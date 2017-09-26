@@ -1,5 +1,20 @@
 (function(){
   console.log("map");
+
+  function currentLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((function (position) {
+        var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
+        marker.bindPopup("Ma position :<br> Latitude : " + position.coords.latitude + ',<br>longitude' + position.coords.longitude).openPopup();
+     }));
+    }else {
+      alert("La geolocalisation n'est pas supportée par ce navigateur.");
+    }
+  }
+
+  $('#myLocation').click(function(e) {
+    currentLocation();
+  });
   
   var app = {
     init: function() {
@@ -39,9 +54,10 @@
 
               var osm = new L.TileLayer(osmUrl, { minZoom: 10, maxZoom: 19, attribution: osmAttrib });
 
-              map.setView(new L.LatLng(43.1100, 0.7300), 15);
+              map.setView(new L.LatLng(43.1060, 0.7200), 15);
               map.addLayer(osm);
               map.scrollWheelZoom.disable();
+
               //circuit ocre
               for (i = 0; i < data.ocre.length; i++) {
                  //marqueurs
@@ -62,8 +78,31 @@
                  //     innerIconStyle: markersOcre.innerIconStyle
                  //   })
                  // }).addTo(map);
+                };
 
-               };
+                for (i = 0; i < data.vert.length; i++) {
+                 //marqueurs
+                 var latVert = data.vert[i].geoloc.lat;
+                 var longVert = data.vert[i].geoloc.lng;
+                 L.marker([latVert, longVert], {icon: L.AwesomeMarkers.icon({icon: 'bell-o', markerColor: 'vert', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                };
+
+
+                for (i = 0; i < data.annexes.length; i++) {
+                 //marqueurs
+                 var latAnnexe = data.annexes[i].geoloc.lat;
+                 var longAnnexe = data.annexes[i].geoloc.lng;
+                 L.marker([latAnnexe, longAnnexe], {icon: L.AwesomeMarkers.icon({icon: 'bicycle', markerColor: 'jaune', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                };
+
+                for (i = 0; i < data.etoiles.length; i++) {
+                 //marqueurs
+                 var latEtoile = data.etoiles[i].geoloc.lat;
+                 var longEtoile = data.etoiles[i].geoloc.lng;
+                 L.marker([latEtoile, longEtoile], {icon: L.AwesomeMarkers.icon({icon: 'undo', markerColor: 'bleu', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                };
+
+
                map.on('fullscreenchange', function() {
                 if (map.isFullscreen()) {
                   bouton.remove();
@@ -108,22 +147,22 @@
     };
 
     //Création des marqueurs
-    var Marker = function(text, borderColor, backgroundColor, textColor) {
-     this.text = text;
-     this.iconSize = [15, 15];
-     this.borderColor = borderColor;
-     this.backgroundColor = backgroundColor;
-     this.textColor = textColor;
-     this.isAlphaNumericIcon = true;
-     this.innerIconStyle = 'margin:auto';
-   };
+    //var Marker = function(text, borderColor, backgroundColor, textColor) {
+   //   this.text = text;
+   //   this.iconSize = [15, 15];
+   //   this.borderColor = borderColor;
+   //   this.backgroundColor = backgroundColor;
+   //   this.textColor = textColor;
+   //   this.isAlphaNumericIcon = true;
+   //   this.innerIconStyle = 'margin:auto';
+   // };
 
 
 
 
      //sentier
-    // var latlngsOcre = this.ocre[0].sentier;
-    // var polylineOcre = L.polyline(latlngsOcre, { color: '#FF5200' }).addTo(map);
+     //var latlngsOcre = this.ocre[0].sentier;
+     //var polylineOcre = L.polyline(latlngsOcre, { color: '#FF5200' }).addTo(map);
 
 
     // //circuit vert clair
