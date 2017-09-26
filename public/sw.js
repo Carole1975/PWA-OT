@@ -3,6 +3,7 @@ var cacheName = "Pwa OT"; //C'est le nom de mon cache
 var filesToCache =[
 '/',
 //'index.html',
+//evenement.html,
 'css/main.css',
 //'css/style.css',
 'main.58fec847.js',

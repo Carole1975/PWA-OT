@@ -12,7 +12,27 @@
     }
   }
 
-  $('#myLocation').click(function(e) {
+  /*Exemple code Laurent géoloc
+navigator.geolocation.watchPosition(
+   ({ coords, timestamp }) =>
+     callback({
+       latitude: coords.latitude,
+       longitude: coords.longitude,
+       lastUpdate: timestamp,
+       accuracy: Math.floor(coords.accuracy)
+     }),
+   err => {
+     if (err.code !== 3) {
+       alert('Unable to find position - ' + err.message);
+     }
+   },
+   {
+     enableHighAccuracy: true,
+     timeout: 15000
+   }
+ );*/
+
+  $('#MyLocation').click(function(e) {
     currentLocation();
   });
   
@@ -54,7 +74,7 @@
 
               var osm = new L.TileLayer(osmUrl, { minZoom: 10, maxZoom: 19, attribution: osmAttrib });
 
-              map.setView(new L.LatLng(43.1060, 0.7200), 15);
+              map.setView(new L.LatLng(43.1080, 0.7220), 15);
               map.addLayer(osm);
               map.scrollWheelZoom.disable();
 
@@ -223,3 +243,24 @@
 
 
 //$('.dropdown-toggle').dropdown()
+
+
+/*Exemple code Laurent géoloc
+navigator.geolocation.watchPosition(
+   ({ coords, timestamp }) =>
+     callback({
+       latitude: coords.latitude,
+       longitude: coords.longitude,
+       lastUpdate: timestamp,
+       accuracy: Math.floor(coords.accuracy)
+     }),
+   err => {
+     if (err.code !== 3) {
+       alert('Unable to find position - ' + err.message);
+     }
+   },
+   {
+     enableHighAccuracy: true,
+     timeout: 15000
+   }
+ );*/
