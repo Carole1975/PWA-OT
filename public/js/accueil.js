@@ -84,7 +84,7 @@
                  //marqueurs
                  var latVert = data.vert[i].geoloc.lat;
                  var longVert = data.vert[i].geoloc.lng;
-                 L.marker([latVert, longVert], {icon: L.AwesomeMarkers.icon({icon: 'bell-o', markerColor: 'vert', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 L.marker([latVert, longVert], {icon: L.AwesomeMarkers.icon({icon: 'bell-o', markerColor: '#00AE68', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
 
 
