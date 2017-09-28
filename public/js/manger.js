@@ -78,6 +78,18 @@ navigator.geolocation.watchPosition(
               map.addLayer(osm);
               map.scrollWheelZoom.disable();
 
+              $('#MyLocation').on('click', function(){
+                map.locate({setView: true, maxZoom: 15});
+              });
+
+              map.on('locationfound', onLocationFound);
+              function onLocationFound(e) {
+                console.log(e);
+
+                L.marker(e.latlng).addTo(map);
+              }
+
+
               //circuit ocre
               for (i = 0; i < data.ocre.length; i++) {
                  //marqueurs
