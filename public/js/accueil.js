@@ -1,7 +1,7 @@
 (function(){
   console.log("map");
 
-  function currentLocation() {
+    /*function currentLocation() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((function (position) {
         var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
@@ -11,6 +11,11 @@
       alert("La geolocalisation n'est pas supportée par ce navigateur.");
     }
   }
+
+  $('#MyLocation').click(function(e) {
+    currentLocation();
+  });*/
+  
 
   /*Exemple code Laurent géoloc
 navigator.geolocation.watchPosition(
@@ -32,9 +37,7 @@ navigator.geolocation.watchPosition(
    }
  );*/
 
-  $('#MyLocation').click(function(e) {
-    currentLocation();
-  });
+  
   
   var app = {
     init: function() {
@@ -77,6 +80,17 @@ navigator.geolocation.watchPosition(
               map.setView(new L.LatLng(43.1080, 0.7220), 15);
               map.addLayer(osm);
               map.scrollWheelZoom.disable();
+
+              $('#MyLocation').on('click', function(){
+                map.locate({setView: true, maxZoom: 15});
+              });
+
+              map.on('locationfound', onLocationFound);
+              function onLocationFound(e) {
+                console.log(e);
+
+                L.marker(e.latlng).addTo(map);
+              }
 
               //circuit ocre
               for (i = 0; i < data.ocre.length; i++) {
@@ -165,6 +179,8 @@ navigator.geolocation.watchPosition(
       // }
 
     };
+
+
 
     //Création des marqueurs
     //var Marker = function(text, borderColor, backgroundColor, textColor) {
