@@ -97,7 +97,7 @@ navigator.geolocation.watchPosition(
                  //marqueurs
                  var latOcre = data.ocre[i].geoloc.lat;
                  var longOcre = data.ocre[i].geoloc.lng;
-                 L.marker([latOcre,longOcre], {icon: L.AwesomeMarkers.icon({icon: 'coffee', markerColor: 'orange', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 L.marker([latOcre,longOcre], {icon: L.AwesomeMarkers.icon({text: i, markerColor: 'orange', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                  // var markersOcre = new Marker(data.ocre[i].marqueur, '#FF5200', "rgba(255, 82, 0, 0.5)", '#000');
                  // var latOcre = data.ocre[i].geoloc.lat;
                  // var longOcre = data.ocre[i].geoloc.lng;
@@ -118,7 +118,7 @@ navigator.geolocation.watchPosition(
                  //marqueurs
                  var latVert = data.vert[i].geoloc.lat;
                  var longVert = data.vert[i].geoloc.lng;
-                 L.marker([latVert, longVert], {icon: L.AwesomeMarkers.icon({icon: 'bell-o', markerColor: '#00AE68', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 L.marker([latVert, longVert], {icon: L.AwesomeMarkers.icon({text: i, markerColor: '#00AE68', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
 
 
@@ -126,16 +126,15 @@ navigator.geolocation.watchPosition(
                  //marqueurs
                  var latAnnexe = data.annexes[i].geoloc.lat;
                  var longAnnexe = data.annexes[i].geoloc.lng;
-                 L.marker([latAnnexe, longAnnexe], {icon: L.AwesomeMarkers.icon({icon: 'bicycle', markerColor: 'jaune', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 L.marker([latAnnexe, longAnnexe], {icon: L.AwesomeMarkers.icon({text: i, markerColor: 'jaune', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
 
                 for (i = 0; i < data.etoiles.length; i++) {
                  //marqueurs
                  var latEtoile = data.etoiles[i].geoloc.lat;
                  var longEtoile = data.etoiles[i].geoloc.lng;
-                 L.marker([latEtoile, longEtoile], {icon: L.AwesomeMarkers.icon({icon: 'undo', markerColor: 'bleu', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 L.marker([latEtoile, longEtoile], {icon: L.AwesomeMarkers.icon({text: i, markerColor: 'bleu', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
-
 
                map.on('fullscreenchange', function() {
                 if (map.isFullscreen()) {
@@ -197,8 +196,8 @@ navigator.geolocation.watchPosition(
 
 
      //sentier
-     //var latlngsOcre = this.ocre[0].sentier;
-     //var polylineOcre = L.polyline(latlngsOcre, { color: '#FF5200' }).addTo(map);
+     // var latlngsOcre = this.ocre[0].sentier;
+     // var polylineOcre = L.polyline(latlngsOcre, { color: '#FF5200' }).addTo(map);
 
 
     // //circuit vert clair
