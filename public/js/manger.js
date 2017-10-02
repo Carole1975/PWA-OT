@@ -120,14 +120,14 @@ navigator.geolocation.watchPosition(
                 };
 
 
-                /*for (i = 0; i < data.annexes.length; i++) {
+                for (i = 0; i < data.gites.length; i++) {
                  //marqueurs
-                 var latAnnexe = data.annexes[i].geoloc.lat;
-                 var longAnnexe = data.annexes[i].geoloc.lng;
-                 L.marker([latAnnexe, longAnnexe], {icon: L.AwesomeMarkers.icon({icon: 'bicycle', markerColor: 'jaune', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 var latGites = data.gites[i].geoloc.lat;
+                 var longGites = data.gites[i].geoloc.lng;
+                 L.marker([latGites, longGites], {icon: L.AwesomeMarkers.icon({icon: 'home', markerColor: 'jaune', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
 
-                for (i = 0; i < data.etoiles.length; i++) {
+                /*for (i = 0; i < data.etoiles.length; i++) {
                  //marqueurs
                  var latEtoile = data.etoiles[i].geoloc.lat;
                  var longEtoile = data.etoiles[i].geoloc.lng;

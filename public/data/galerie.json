@@ -517,6 +517,181 @@
             "lng": 0.776231
         }
     }
+    ],
+
+    "gites": [{
+        "id": "0",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Beauchalot",
+        "geoloc": {
+            "lat": 43.107304,
+            "lng": 0.870056
+        }
+    },
+    {
+        "id": "1",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Encausses Les Thermes",
+        "geoloc": {
+            "lat": 43.047547,
+            "lng": 0.740793 
+        }
+    },
+    {
+        "id": "2",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Ganties",
+        "geoloc": {
+            "lat": 43.063008,
+            "lng": 0.830743
+        }
+    },
+    {
+        "id": "3",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Ganties",
+        "geoloc": {
+            "lat": 43.065109,
+            "lng": 0.815296
+        }
+    },
+    {
+        "id": "4",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Labarthe-Rivière",
+        "geoloc": {
+            "lat": 43.0822856,
+            "lng": 0.668985
+        }
+    },
+    {
+        "id": "5",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Landorthe",
+        "geoloc": {
+            "lat": 43.123254,
+            "lng": 0.783166
+        }
+    },
+    {
+        "id": "6",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Montespan",
+        "geoloc": {
+            "lat": 43.084510,
+            "lng": 0.853037
+        }
+    },
+    {
+        "id": "7",
+        "marqueur":"#FF3485",
+        "titre": "Gîte à Pointis de Rivière",
+        "geoloc": {
+            "lat": 43.086583,
+            "lng": 0.615596
+        }
+    },
+    {
+        "id": "8",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Ponlat-Taillebourg",
+        "geoloc": {
+            "lat": 43.123725,
+            "lng": 0.575305
+        }
+    },
+    {
+        "id": "9",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Saint-Marcet",
+        "geoloc": {
+            "lat": 43.210030,
+            "lng": 0.738765
+        }
+    },
+    {
+        "id": "10",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Saint-Gaudens",
+        "geoloc": {
+            "lat": 43.101506,
+            "lng": 0.718368
+        }
+    },
+    {
+        "id": "11",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Saint-Gaudens",
+        "geoloc": {
+            "lat": 43.109214,
+            "lng": 0.726568
+        }
+    },
+    {
+        "id": "12",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Saint-Marcet",
+        "geoloc": {
+            "lat": 43.201716,
+            "lng": 0.735823
+        }
+    },
+    {
+        "id": "13",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Sengouagnet",
+        "geoloc": {
+            "lat": 42.961157,
+            "lng": 0.794565
+        }
+    },
+    {
+        "id": "14",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Sengouagnet",
+        "geoloc": {
+            "lat": 42.956909,
+            "lng": 0.801582
+        }
+    },
+    {
+        "id": "15",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Soueich",
+        "geoloc": {
+            "lat": 43.044002,
+            "lng": 0.783487
+        }
+    },
+    {
+        "id": "16",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Soueich",
+        "geoloc": {
+            "lat": 43.044261,
+            "lng": 0.779312
+        }
+    },
+    {
+        "id": "17",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Spéhis-Clarac",
+        "geoloc": {
+            "lat": 43.128039,
+            "lng": 0.606851
+        }
+    },
+    {
+        "id": "18",
+        "marqueur": "#FF3485",
+        "titre": "Gîte à Valcabrère",
+        "geoloc": {
+            "lat": 43.034538,
+            "lng": 0.578314
+        }
+    }
+
+
 ]
 }
 

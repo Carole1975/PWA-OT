@@ -133,7 +133,7 @@ navigator.geolocation.watchPosition(
                  //marqueurs
                  var latEtoile = data.etoiles[i].geoloc.lat;
                  var longEtoile = data.etoiles[i].geoloc.lng;
-                 L.marker([latEtoile, longEtoile], {icon: L.AwesomeMarkers.icon({text: i, markerColor: 'bleu', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 L.marker([latEtoile, longEtoile], {icon: L.AwesomeMarkers.icon({icon: 'star', markerColor: 'rose', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
 
                map.on('fullscreenchange', function() {
