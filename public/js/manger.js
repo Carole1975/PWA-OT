@@ -93,9 +93,9 @@ navigator.geolocation.watchPosition(
               //circuit hôtels
               for (i = 0; i < data.hotels.length; i++) {
                  //marqueurs
-                 var latHotels = data.hotels[i].geoloc.lat;
-                 var longHotels = data.hotels[i].geoloc.lng;
-                 L.marker([latHotels,longHotels], {icon: L.AwesomeMarkers.icon({icon: 'bed', markerColor: '#A22630', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 var latHotel = data.hotels[i].geoloc.lat;
+                 var longHotel = data.hotels[i].geoloc.lng;
+                 L.marker([latHotel,longHotel], {icon: L.AwesomeMarkers.icon({icon: 'bed', markerColor: '#A22630', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                  // var markersOcre = new Marker(data.ocre[i].marqueur, '#FF5200', "rgba(255, 82, 0, 0.5)", '#000');
                  // var latOcre = data.ocre[i].geoloc.lat;
                  // var longOcre = data.ocre[i].geoloc.lng;
@@ -114,17 +114,38 @@ navigator.geolocation.watchPosition(
 
                 for (i = 0; i < data.hotes.length; i++) {
                  //marqueurs
-                 var latHotes = data.hotes[i].geoloc.lat;
-                 var longHotes = data.hotes[i].geoloc.lng;
-                 L.marker([latHotes, longHotes], {icon: L.AwesomeMarkers.icon({icon: 'bed', markerColor: '#D5647C', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 var latHote = data.hotes[i].geoloc.lat;
+                 var longHote = data.hotes[i].geoloc.lng;
+                 L.marker([latHote, longHote], {icon: L.AwesomeMarkers.icon({icon: 'bed', markerColor: '#D5647C', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
 
 
                 for (i = 0; i < data.gites.length; i++) {
                  //marqueurs
-                 var latGites = data.gites[i].geoloc.lat;
-                 var longGites = data.gites[i].geoloc.lng;
-                 L.marker([latGites, longGites], {icon: L.AwesomeMarkers.icon({icon: 'home', markerColor: 'jaune', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 var latGite = data.gites[i].geoloc.lat;
+                 var longGite = data.gites[i].geoloc.lng;
+                 L.marker([latGite, longGite], {icon: L.AwesomeMarkers.icon({icon: 'home', markerColor: 'jaune', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                };
+
+                for (i = 0; i < data.campingcars.length; i++) {
+                 //marqueurs
+                 var latCampingcar = data.campingcars[i].geoloc.lat;
+                 var longCampingcar = data.campingcars[i].geoloc.lng;
+                 L.marker([latCampingcar, longCampingcar], {icon: L.AwesomeMarkers.icon({icon: 'truck', markerColor: 'bleu', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                };
+
+                for (i = 0; i < data.reshabjeunes.length; i++) {
+                 //marqueurs
+                 var latReshabjeune = data.reshabjeunes[i].geoloc.lat;
+                 var longReshabjeune = data.reshabjeunes[i].geoloc.lng;
+                 L.marker([latReshabjeune, longReshabjeune], {icon: L.AwesomeMarkers.icon({icon: 'child', markerColor: 'bleu', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                };
+
+                for (i = 0; i < data.restaurants.length; i++) {
+                 //marqueurs
+                 var latRestaurant = data.restaurants[i].geoloc.lat;
+                 var longRestaurant = data.restaurants[i].geoloc.lng;
+                 L.marker([latRestaurant, longRestaurant], {icon: L.AwesomeMarkers.icon({icon: 'cutlery', markerColor: 'bleu', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
 
                 /*for (i = 0; i < data.etoiles.length; i++) {
