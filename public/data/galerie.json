@@ -526,7 +526,7 @@
             "lng": 0.7386109
         }
     }
-    ],
+],
 
     "gites": [{
         "id": "0",
@@ -600,7 +600,7 @@
             "lng": 0.823117
         }
     },
-     {
+    {
         "id": "8",
         "marqueur":"#FF3485",
         "titre": "Gîte à Estadens - Marassé",
@@ -863,109 +863,334 @@
     }
 ],
 
-    "campingcars": [{
-        "id": "0",
-        "marqueur": "#E54661",
-        "titre": "Aire de camping-cars",
-        "geoloc": {
-            "lat": 43.110185,
-            "lng": 0.707780
-        }
+"campingcars": [{
+    "id": "0",
+    "marqueur": "#E54661",
+    "titre": "Aire de camping-cars",
+    "geoloc": {
+        "lat": 43.110185,
+        "lng": 0.707780
     }
+}
 ],
 
-    "reshabjeunes": [{
-        "id": "0",
-        "marqueur": "#B06876",
-        "titre": "Résidence habitat jeunes",
-        "geoloc": {
-            "lat": 43.106278,
-            "lng": 0.713312
-        }
+"reshabjeunes": [{
+    "id": "0",
+    "marqueur": "#B06876",
+    "titre": "Résidence habitat jeunes",
+    "geoloc": {
+        "lat": 43.106278,
+        "lng": 0.713312
     }
+}
 ],
 
-    "restaurants": [{
-        "id": "0",
-        "marqueur": "#B62A79",
-        "titre": "Restaurant L'Etable",
-        "geoloc": {
-            "lat": 43.098688,
-            "lng": 0.707626
-        }
-    },
-    {
-        "id": "1",
-        "marqueur": "#B62A79",
-        "titre": "Restaurant La Pyrène",
-        "geoloc": {
-            "lat": 43.108922,
-            "lng": 0.709486
-        }
-    },
-    {
-        "id": "2",
-        "marqueur": "#B62A79",
-        "titre": "Restaurant Le Beaurivage",
-        "geoloc": {
-            "lat": 43.098953,
-            "lng":0.707052
-        }
-    },
-    {
-        "id": "3",
-        "marqueur": "#B62A79",
-        "titre": "Restaurant Le Commerce",
-        "geoloc": {
-            "lat": 43.110101,
-            "lng": 0.723408
-        }
-    },
-    {
-        "id": "4",
-        "marqueur": "#B62A79",
-        "titre": "Restaurant Le Français",
-        "geoloc": {
-            "lat": 43.107921,
-            "lng": 0.725047
-        }
-    },
-    {
-        "id": "5",
-        "marqueur": "#B62A79",
-        "titre": "Restaurant Le Mooréa",
-        "geoloc": {
-            "lat": 43.107406,
-            "lng": 0.725425
-        }
-    },
-    {
-        "id": "6",
-        "marqueur": "#B62A79",
-        "titre": "Restaurant Le Nouveau Bistrot",
-        "geoloc": {
-            "lat": 43.108192,
-            "lng": 0.720829
-        }
-    },
-    {
-        "id": "7",
-        "marqueur": "#B62A79",
-        "titre": "Restaurant Le Pédussaut",
-        "geoloc": {
-            "lat": 43.109573,
-            "lng": 0.723194
-        }
-    },
-    {
-        "id": "8",
-        "marqueur": "#B62A79",
-        "titre": "Restaurant Le Trèfle",
-        "geoloc": {
-            "lat": 43.081187,
-            "lng": 0.671605
-        }
+"restaurants": [{
+    "id": "0",
+    "marqueur": "#B62A79",
+    "titre": "Restaurant L'Etable",
+    "geoloc": {
+        "lat": 43.098688,
+        "lng": 0.707626
     }
+},
+{
+    "id": "1",
+    "marqueur": "#B62A79",
+    "titre": "Restaurant La Pyrène",
+    "geoloc": {
+        "lat": 43.108922,
+        "lng": 0.709486
+    }
+},
+{
+    "id": "2",
+    "marqueur": "#B62A79",
+    "titre": "Restaurant Le Beaurivage",
+    "geoloc": {
+        "lat": 43.098953,
+        "lng":0.707052
+    }
+},
+{
+    "id": "3",
+    "marqueur": "#B62A79",
+    "titre": "Restaurant Le Commerce",
+    "geoloc": {
+        "lat": 43.110101,
+        "lng": 0.723408
+    }
+},
+{
+    "id": "4",
+    "marqueur": "#B62A79",
+    "titre": "Restaurant Le Français",
+    "geoloc": {
+        "lat": 43.107921,
+        "lng": 0.725047
+    }
+},
+{
+    "id": "5",
+    "marqueur": "#B62A79",
+    "titre": "Restaurant Le Mooréa",
+    "geoloc": {
+        "lat": 43.107406,
+        "lng": 0.725425
+    }
+},
+{
+    "id": "6",
+    "marqueur": "#B62A79",
+    "titre": "Restaurant Le Nouveau Bistrot",
+    "geoloc": {
+        "lat": 43.108192,
+        "lng": 0.720829
+    }
+},
+{
+    "id": "7",
+    "marqueur": "#B62A79",
+    "titre": "Restaurant Le Pédussaut",
+    "geoloc": {
+        "lat": 43.109573,
+        "lng": 0.723194
+    }
+},
+{
+    "id": "8",
+    "marqueur": "#B62A79",
+    "titre": "Restaurant Le Trèfle",
+    "geoloc": {
+        "lat": 43.081187,
+        "lng": 0.671605
+    }
+}
+
+],
+
+"patrimoine": [{
+    "id": "0",
+    "marqueur": "#933F00",
+    "titre": "Villa Gallo-Romaine de Montmaurin",
+    "geoloc": {
+        "lat": 43.216634,
+        "lng": 0.645808
+    }
+},
+{
+    "id": "1",
+    "marqueur": "#933F00",
+    "titre": "Notre Dame de Lorette à Alan",
+    "geoloc": {
+        "lat": 43.222474,
+        "lng": 0.929859
+
+    }
+},
+{
+    "id": "2",
+    "marqueur": "#933F00",
+    "titre": "Faïenceries de Martres-Tolosane",
+    "geoloc": {
+        "lat": 43.198444,
+        "lng": 1.010850
+    }
+},
+{
+    "id": "3",
+    "marqueur": "#933F00",
+    "titre": "Abbaye de Bonnefont (en Comminges)",
+    "geoloc": {
+        "lat": 43.141431,
+        "lng": 0.874344
+    }
+},
+{
+    "id": "4",
+    "marqueur": "#933F00",
+    "titre": "Place Jean Jaurès à Saint-Gaudens",
+    "geoloc": {
+        "lat": 43.107923,
+        "lng": 0.724724
+    }
+},
+{
+    "id": "5",
+    "marqueur": "#933F00",
+    "titre": "Villa Gallo-Romaine de Valentine",
+    "geoloc": {
+        "lat": 43.092719,
+        "lng": 0.687456
+    }
+},
+{
+    "id": "6",
+    "marqueur": "#933F00",
+    "titre": "Château de Montespan à Montespan",
+    "geoloc": {
+        "lat": 43.087500,
+        "lng": 0.851582
+    }
+},
+{
+    "id": "7",
+    "marqueur": "#933F00",
+    "titre": "Chapelle de Miègecoste à Aspet",
+    "geoloc": {
+        "lat": 43.013724,
+        "lng": 0.806230
+    }
+},
+{
+    "id": "8",
+    "marqueur": "#933F00",
+    "titre": "Chapelle de Saint-Aventin à Saint-Aventin",
+    "geoloc": {
+        "lat": 42.804908,
+        "lng": 0.559670
+    }
+}
+
+],
+
+"lacs": [{
+    "id": "0",
+    "marqueur": "#00129D",
+    "titre": "Lac de la Gimone à Lunax",
+    "geoloc": {
+        "lat": 43.335406,
+        "lng": 0.682247
+    }
+},
+{
+    "id": "1",
+    "marqueur": "#00129D",
+    "titre": "Base de loisirs de Boulogne sur Gesse à Boulogne sur Gesse",
+    "geoloc": {
+        "lat": 43.283465,
+        "lng": 0.655173
+    }
+},
+{
+    "id": "2",
+    "marqueur": "#00129D",
+    "titre": "Lac de Sède à Saint-Gaudens",
+    "geoloc": {
+        "lat": 43.101076,
+        "lng": 0.702937
+    }
+},
+{
+    "id": "3",
+    "marqueur": "#00129D",
+    "titre": "Base de loisirs de Montréjeau à Montréjeau",
+    "geoloc": {
+        "lat": 43.078531,
+        "lng": 0.565716
+    }
+},
+{
+    "id": "4",
+    "marqueur": "#00129D",
+    "titre": "Lac d'Oô à Oô",
+    "geoloc": {
+        "lat": 42.739891,
+        "lng": 0.491547
+    }
+}
+],
+
+"offices": [{
+    "id": "0",
+    "marqueur": "#CD5806",
+    "titre": "Office de Tourisme de Boulogne sur Gesse",
+    "geoloc": {
+        "lat": 43.290880,
+        "lng": 0.646176
+    }
+},
+{
+    "id": "1",
+    "marqueur": "#CD5806",
+    "titre": "Office de Tourisme du canton d'Aurignac",
+    "geoloc": {
+        "lat": 43.217476,
+        "lng": 0.880902
+    }
+},
+{
+    "id": "2",
+    "marqueur": "#CD5806",
+    "titre": "Office de Tourisme du canton de Saint-Martory",
+    "geoloc": {
+        "lat": 43.143240,
+        "lng": 0.930362
+    }
+},
+{
+    "id": "3",
+    "marqueur": "#CD5806",
+    "titre": "Office de Tourisme de Salies-du Salat",
+    "geoloc": {
+        "lat": 43.103487,
+        "lng": 0.959987
+    }
+},
+{
+    "id": "4",
+    "marqueur": "#CD5806",
+    "titre": "SI Vallée de l'Arbas",
+    "geoloc": {
+        "lat": 42.996328,
+        "lng": 0.908535
+    }
+},
+{
+    "id": "5",
+    "marqueur": "#CD5806",
+    "titre": "SI d'Encausse-les-Thermes",
+    "geoloc": {
+        "lat": 43.050739,
+        "lng": 0.743888
+    }
+},
+{
+    "id": "6",
+    "marqueur": "#CD5806",
+    "titre": "SI de Barbazan",
+    "geoloc": {
+        "lat": 43.018426,
+        "lng": 0.599196
+    }
+},
+{
+    "id": "7",
+    "marqueur": "#CD5806",
+    "titre": "Office de Tourisme de Luchon",
+    "geoloc": {
+        "lat": 42.789462,
+        "lng": 0.591951
+    }
+},
+{
+    "id": "8",
+    "marqueur": "#CD5806",
+    "titre": "Office de Tourisme de Martres-Tolosane",
+    "geoloc": {
+        "lat": 43.199156,
+        "lng": 1.011143
+    }
+},
+{
+    "id": "9",
+    "marqueur": "#CD5806",
+    "titre": "Office intercommunal de Montréjeau",
+    "geoloc": {
+        "lat": 43.085100,
+        "lng": 0.569448
+    }
+}
 
 ]
 }

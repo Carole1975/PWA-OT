@@ -90,12 +90,12 @@ navigator.geolocation.watchPosition(
               }
 
 
-              //circuit ocre
-              for (i = 0; i < data.ocre.length; i++) {
+              //circuit patrimoine
+              for (i = 0; i < data.patrimoine.length; i++) {
                  //marqueurs
-                 var latOcre = data.ocre[i].geoloc.lat;
-                 var longOcre = data.ocre[i].geoloc.lng;
-                 L.marker([latOcre,longOcre], {icon: L.AwesomeMarkers.icon({icon: 'coffee', markerColor: 'orange', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 var latPatrimoine = data.patrimoine[i].geoloc.lat;
+                 var longPatrimoine = data.patrimoine[i].geoloc.lng;
+                 L.marker([latPatrimoine,longPatrimoine], {icon: L.AwesomeMarkers.icon({icon: 'camera', markerColor: '#933F00', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                  // var markersOcre = new Marker(data.ocre[i].marqueur, '#FF5200', "rgba(255, 82, 0, 0.5)", '#000');
                  // var latOcre = data.ocre[i].geoloc.lat;
                  // var longOcre = data.ocre[i].geoloc.lng;
@@ -112,27 +112,41 @@ navigator.geolocation.watchPosition(
                  // }).addTo(map);
                 };
 
-                for (i = 0; i < data.vert.length; i++) {
+                for (i = 0; i < data.lacs.length; i++) {
                  //marqueurs
-                 var latVert = data.vert[i].geoloc.lat;
-                 var longVert = data.vert[i].geoloc.lng;
-                 L.marker([latVert, longVert], {icon: L.AwesomeMarkers.icon({icon: 'bell-o', markerColor: '#00AE68', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 var latLac = data.lacs[i].geoloc.lat;
+                 var longLac = data.lacs[i].geoloc.lng;
+                 L.marker([latLac, longLac], {icon: L.AwesomeMarkers.icon({icon: 'flask', markerColor: 'cadetblue', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
 
 
-                for (i = 0; i < data.annexes.length; i++) {
+                for (i = 0; i < data.offices.length; i++) {
                  //marqueurs
-                 var latAnnexe = data.annexes[i].geoloc.lat;
-                 var longAnnexe = data.annexes[i].geoloc.lng;
-                 L.marker([latAnnexe, longAnnexe], {icon: L.AwesomeMarkers.icon({icon: 'bicycle', markerColor: 'jaune', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 var latOffice = data.offices[i].geoloc.lat;
+                 var longOffice = data.offices[i].geoloc.lng;
+                 L.marker([latOffice, longOffice], {icon: L.AwesomeMarkers.icon({icon: 'info', markerColor: '#CD5806', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
 
-                for (i = 0; i < data.etoiles.length; i++) {
+                /*for (i = 0; i < data.etoiles.length; i++) {
                  //marqueurs
                  var latEtoile = data.etoiles[i].geoloc.lat;
                  var longEtoile = data.etoiles[i].geoloc.lng;
                  L.marker([latEtoile, longEtoile], {icon: L.AwesomeMarkers.icon({icon: 'undo', markerColor: 'bleu', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
-                };
+                };*/
+
+                /*for (i = 0; i < data.etoiles.length; i++) {
+                 //marqueurs
+                 var latEtoile = data.etoiles[i].geoloc.lat;
+                 var longEtoile = data.etoiles[i].geoloc.lng;
+                 L.marker([latEtoile, longEtoile], {icon: L.AwesomeMarkers.icon({icon: 'undo', markerColor: 'bleu', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                };*/
+
+                /*for (i = 0; i < data.etoiles.length; i++) {
+                 //marqueurs
+                 var latEtoile = data.etoiles[i].geoloc.lat;
+                 var longEtoile = data.etoiles[i].geoloc.lng;
+                 L.marker([latEtoile, longEtoile], {icon: L.AwesomeMarkers.icon({icon: 'undo', markerColor: 'bleu', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                };*/
 
 
                map.on('fullscreenchange', function() {
