@@ -349,7 +349,8 @@
 
     "etoiles": [{
         "id": "0",
-        "marqueur": "#5BDD45",
+        "marqueur": "1",
+        "couleur": "#5BDD45",
         "titre": "Place Armand Marrast",
         "geoloc": {
             "lat": 43.107176,
@@ -359,7 +360,8 @@
 
     {
         "id": "1",
-        "marqueur": " #7C2250",
+        "marqueur": "2",
+        "couleur": "#7C2250",
         "titre": "Ancienne banque de France",
         "geoloc": {
             "lat": 43.107427,
@@ -369,7 +371,8 @@
 
     {
         "id": "2",
-        "marqueur": "#FF7200",
+        "marqueur": "3",
+        "couleur": "#FF7200",
         "titre": "Halle aux grains 1845",
         "geoloc": {
             "lat": 43.107876,
@@ -379,7 +382,8 @@
 
     {
         "id": "3",
-        "marqueur": "#FF3485",
+        "marqueur": "4",
+        "couleur": "#FF3485",
         "titre": "Ancien couvent des Jacobins",
         "geoloc": {
             "lat": 43.108653,
@@ -389,7 +393,8 @@
 
     {
         "id": "4",
-        "marqueur": "#00A7D8",
+        "marqueur": "5",
+        "couleur": "#00A7D8",
         "titre": "Ancien couvent des Visitandines",
         "geoloc": {
             "lat": 43.108472,
@@ -400,7 +405,7 @@
 
     "hotels": [{
         "id": "0",
-        "marqueur": "#A22630",
+        "marqueur": "1",
         "titre": "Hôtel de l'Esplanade",
         "geoloc": {
             "lat": 43.107646,
@@ -409,7 +414,7 @@
     },
     {
         "id": "1",
-        "marqueur": "#A22630",
+        "marqueur": "2",
         "titre": "Hôtel du Commerce",
         "geoloc": {
             "lat": 43.110109,
@@ -418,7 +423,7 @@
     },
     {
         "id": "2",
-        "marqueur": "#A22630",
+        "marqueur": "3",
         "titre": "Hôtel Ibis budget",
         "geoloc": {
             "lat": 43.114185,
@@ -427,7 +432,7 @@
     },
     {
         "id": "3",
-        "marqueur": "#A22630",
+        "marqueur": "4",
         "titre": "Hôtel Le Beaurivage",
         "geoloc": {
             "lat": 43.098938,
@@ -436,7 +441,7 @@
     },
     {
         "id": "4",
-        "marqueur": "#A22630",
+        "marqueur": "5",
         "titre": "Hôtel Le Pédussaut",
         "geoloc": {
             "lat": 43.109599,
@@ -447,7 +452,7 @@
 
     "hotes": [{
         "id": "0",
-        "marqueur": "#D5647C",
+        "marqueur": "1",
         "titre": "Chambres d'hôtes à Ardiège - Cholet",
         "geoloc": {
             "lat": 43.069938,
@@ -456,7 +461,7 @@
     },
     {
         "id": "1",
-        "marqueur": "#D5647C",
+        "marqueur": "2",
         "titre": "Chambres d'hôtes à Cazeneuve - Longuetaud",
         "geoloc": {
             "lat": 43.175433,
@@ -465,7 +470,7 @@
     },
     {
         "id": "2",
-        "marqueur": "#D5647C",
+        "marqueur": "3",
         "titre": "Chambres d'hôtes à Pointis de Rivière - Piscedda",
         "geoloc": {
             "lat": 43.089478,
@@ -474,7 +479,7 @@
     },
     {
         "id": "3",
-        "marqueur": "#D5647C",
+        "marqueur": "4",
         "titre": "Chambres d'hôtes à Saint-Gaudens - Cathelain",
         "geoloc": {
             "lat": 43.111640,
@@ -483,7 +488,7 @@
     },
     {
         "id": "4",
-        "marqueur": "#D5647C",
+        "marqueur": "5",
         "titre": "Chambres d'hôtes à Saint-Gaudens - Dedieu",
         "geoloc": {
             "lat": 43.111303,
@@ -492,7 +497,7 @@
     },
     {
         "id": "5",
-        "marqueur": "#D5647C",
+        "marqueur": "6",
         "titre": "Chambres d'hôtes à Saint-Gaudens - Santi",
         "geoloc": {
             "lat": 43.107449,
@@ -501,7 +506,7 @@
     },
     {
         "id": "6",
-        "marqueur": "#D5647C",
+        "marqueur": "7",
         "titre": "Chambres d'hôtes à Villeneuve de Rivière - Bordes",
         "geoloc": {
             "lat": 43.120309,
@@ -510,7 +515,7 @@
     },
     {
         "id": "7",
-        "marqueur": "#D5647C",
+        "marqueur": "8",
         "titre": "Chambres d'hôtes à Estancarbon - Cottereau",
         "geoloc": {
             "lat": 43.104196,
@@ -519,7 +524,7 @@
     },
     {
         "id": "8",
-        "marqueur": "#D5647C",
+        "marqueur": "9",
         "titre": "Chambres d'hôtes à Saint-Marcet - Lamarque",
         "geoloc": {
             "lat": 43.210167,
@@ -530,7 +535,7 @@
 
     "gites": [{
         "id": "0",
-        "marqueur": "#FF3485",
+        "marqueur": "1",
         "titre": "Gîte à Aspet - Cardete",
         "geoloc": {
             "lat": 43.024425,
@@ -539,7 +544,7 @@
     },
     {
         "id": "1",
-        "marqueur": "#FF3485",
+        "marqueur": "2",
         "titre": "Gîte à Aspet-Sarrat - Feixa",
         "geoloc": {
             "lat": 43.066763,
@@ -548,7 +553,7 @@
     },
     {
         "id": "2",
-        "marqueur": "#FF3485",
+        "marqueur": "3",
         "titre": "Gîte à Beauchalot - Fossat",
         "geoloc": {
             "lat": 43.107304,
@@ -557,7 +562,7 @@
     },
     {
         "id": "3",
-        "marqueur": "#FF3485",
+        "marqueur": "4",
         "titre": "Gîte à Bordes de Rivière - Gaboriau",
         "geoloc": {
             "lat": 43.119706,
@@ -566,7 +571,7 @@
     },
     {
         "id": "4",
-        "marqueur": "#FF3485",
+        "marqueur": "5",
         "titre": "Gîte à Cier de Rivière - Pizet",
         "geoloc": {
             "lat": 43.063555,
@@ -575,7 +580,7 @@
     },
     {
         "id": "5",
-        "marqueur": "#FF3485",
+        "marqueur": "6",
         "titre": "Gîte à Encausse les Thermes - Pellan",
         "geoloc": {
             "lat": 43.047547,
@@ -584,7 +589,7 @@
     },
     {
         "id": "6",
-        "marqueur": "#FF3485",
+        "marqueur": "7",
         "titre": "Gîte à Estadens - Estrade",
         "geoloc": {
             "lat": 43.036808,
@@ -593,7 +598,7 @@
     },
     {
         "id": "7",
-        "marqueur":"#FF3485",
+        "marqueur":"8",
         "titre": "Gîte à Estadens - Marassé",
         "geoloc": {
             "lat": 43.032921,
@@ -602,7 +607,7 @@
     },
     {
         "id": "8",
-        "marqueur":"#FF3485",
+        "marqueur":"9",
         "titre": "Gîte à Estadens - Marassé",
         "geoloc": {
             "lat": 43.032921,
@@ -611,7 +616,7 @@
     },
     {
         "id": "9",
-        "marqueur": "#FF3485",
+        "marqueur": "10",
         "titre": "Gîte à Ganties - Camilli ",
         "geoloc": {
             "lat": 43.063008,
@@ -620,7 +625,7 @@
     },
     {
         "id": "10",
-        "marqueur": "#FF3485",
+        "marqueur": "11",
         "titre": "Gîte à Ganties - Dattas",
         "geoloc": {
             "lat": 43.065109,
@@ -629,7 +634,7 @@
     },
     {
         "id": "11",
-        "marqueur": "#FF3485",
+        "marqueur": "12",
         "titre": "Gîte à Labarthe de Rivière - Vougny",
         "geoloc": {
             "lat": 43.082933,
@@ -638,7 +643,7 @@
     },
     {
         "id": "12",
-        "marqueur": "#FF3485",
+        "marqueur": "13",
         "titre": "Gîte à Labarthe de Rivière - Vougny",
         "geoloc": {
             "lat": 43.082933,
@@ -647,7 +652,7 @@
     },
     {
         "id": "13",
-        "marqueur": "#FF3485",
+        "marqueur": "14",
         "titre": "Gîte à Labroquère - Labes",
         "geoloc": {
             "lat": 43.041602,
@@ -656,7 +661,7 @@
     },
     {
         "id": "14",
-        "marqueur": "#FF3485",
+        "marqueur": "15",
         "titre": "Gîte à Landorthe - Nauche",
         "geoloc": {
             "lat": 43.123254,
@@ -665,7 +670,7 @@
     },
     {
         "id": "15",
-        "marqueur": "#FF3485",
+        "marqueur": "16",
         "titre": "Gîte à Montespan - Floch",
         "geoloc": {
             "lat": 43.083697,
@@ -674,7 +679,7 @@
     },
     {
         "id": "16",
-        "marqueur": "#FF3485",
+        "marqueur": "17",
         "titre": "Gîte à Montespan - Floch",
         "geoloc": {
             "lat": 43.083697,
@@ -683,7 +688,7 @@
     },
     {
         "id": "17",
-        "marqueur": "#FF3485",
+        "marqueur": "18",
         "titre": "Gîte à Pointis de Rivière - Caillard",
         "geoloc": {
             "lat": 43.086595,
@@ -692,7 +697,7 @@
     },
     {
         "id": "18",
-        "marqueur": "#FF3485",
+        "marqueur": "19",
         "titre": "Gîte à Pointis de Rivière - Caillard",
         "geoloc": {
             "lat": 43.086595,
@@ -701,7 +706,7 @@
     },
     {
         "id": "19",
-        "marqueur": "#FF3485",
+        "marqueur": "20",
         "titre": "Gîte à Pointis de Rivière - Piscedda",
         "geoloc": {
             "lat": 43.089984,
@@ -710,7 +715,7 @@
     },
     {
         "id": "20",
-        "marqueur": "#FF3485",
+        "marqueur": "21",
         "titre": "Gîte à Ponlat-Taillebourg - Adoue",
         "geoloc": {
             "lat": 43.123725,
@@ -719,16 +724,7 @@
     },
     {
         "id": "21",
-        "marqueur": "#FF3485",
-        "titre": "Gîte à Régades - Adoue",
-        "geoloc": {
-            "lat": 43.050792,
-            "lng": 0.721950
-        }
-    },
-    {
-        "id": "22",
-        "marqueur": "#FF3485",
+        "marqueur": "22",
         "titre": "Gîte à Saint-Marcet - Lamarque",
         "geoloc": {
             "lat": 43.210030,
@@ -736,8 +732,8 @@
         }
     },
     {
-        "id": "23",
-        "marqueur": "#FF3485",
+        "id": "22",
+        "marqueur": "23",
         "titre": "Gîte à Saint-Gaudens - Jaouen",
         "geoloc": {
             "lat": 43.101430,
@@ -745,8 +741,8 @@
         }
     },
     {
-        "id": "24",
-        "marqueur": "#FF3485",
+        "id": "23",
+        "marqueur": "24",
         "titre": "Gîte à Saint-Gaudens - Jaouen",
         "geoloc": {
             "lat": 43.101506,
@@ -754,8 +750,8 @@
         }
     },
     {
-        "id": "25",
-        "marqueur": "#FF3485",
+        "id": "24",
+        "marqueur": "25",
         "titre": "Gîte à Saint-Gaudens - Jaouen",
         "geoloc": {
             "lat": 43.109214,
@@ -763,8 +759,8 @@
         }
     },
     {
-        "id": "26",
-        "marqueur": "#FF3485",
+        "id": "25",
+        "marqueur": "26",
         "titre": "Gîte à Saint-Marcet - Cieutat",
         "geoloc": {
             "lat": 43.201716,
@@ -772,8 +768,8 @@
         }
     },
     {
-        "id": "27",
-        "marqueur": "#FF3485",
+        "id": "26",
+        "marqueur": "27",
         "titre": "Gîte à Sengouagnet - Cazelles",
         "geoloc": {
             "lat": 42.961157,
@@ -781,8 +777,8 @@
         }
     },
     {
-        "id": "28",
-        "marqueur": "#FF3485",
+        "id": "27",
+        "marqueur": "28",
         "titre": "Gîte à Sengouagnet - Escafignoux",
         "geoloc": {
             "lat": 42.956909,
@@ -790,8 +786,8 @@
         }
     },
     {
-        "id": "29",
-        "marqueur": "#FF3485",
+        "id": "28",
+        "marqueur": "29",
         "titre": "Gîte à Sepx - Fraisseix et Fauque",
         "geoloc": {
             "lat": 43.155874,
@@ -799,8 +795,8 @@
         }
     },
     {
-        "id": "30",
-        "marqueur": "#FF3485",
+        "id": "29",
+        "marqueur": "30",
         "titre": "Gîte à Soueich - Laffont",
         "geoloc": {
             "lat": 43.044002,
@@ -808,8 +804,8 @@
         }
     },
     {
-        "id": "31",
-        "marqueur": "#FF3485",
+        "id": "30",
+        "marqueur": "31",
         "titre": "Gîte à Soueich - Manalt",
         "geoloc": {
             "lat": 43.044261,
@@ -817,8 +813,8 @@
         }
     },
     {
-        "id": "32",
-        "marqueur": "#FF3485",
+        "id": "31",
+        "marqueur": "32",
         "titre": "Gîte à Spéhis-Clarac - Lenain",
         "geoloc": {
             "lat": 43.128039,
@@ -826,8 +822,8 @@
         }
     },
     {
-        "id": "33",
-        "marqueur": "#FF3485",
+        "id": "32",
+        "marqueur": "33",
         "titre": "Gîte à Valcabrère - Devant",
         "geoloc": {
             "lat": 43.034538,
@@ -835,8 +831,8 @@
         }
     },
     {
-        "id": "34",
-        "marqueur": "#FF3485",
+        "id": "33",
+        "marqueur": "34",
         "titre": "Gîte à Villeneuve de Rivière - Desramé",
         "geoloc": {
             "lat": 43.126014,
@@ -844,8 +840,8 @@
         }
     },
     {
-        "id": "35",
-        "marqueur": "#FF3485",
+        "id": "34",
+        "marqueur": "35",
         "titre": "Gîte à Villeneuve de Rivière - Hery",
         "geoloc": {
             "lat": 43.119774,
@@ -853,19 +849,29 @@
         }
     },
     {
-        "id": "36",
-        "marqueur": "#FF3485",
+        "id": "35",
+        "marqueur": "36",
         "titre": "Gîte à Villeneuve de Rivière - Pène",
         "geoloc": {
             "lat": 43.120038,
             "lng": 0.657797
         }
+    },
+    {
+        "id": "36",
+        "marqueur": "37",
+        "titre": "Gîte à Régades - Adoue",
+        "geoloc": {
+            "lat": 43.050792,
+            "lng": 0.721950
+        }
     }
+
 ],
 
 "campingcars": [{
     "id": "0",
-    "marqueur": "#E54661",
+    "marqueur": "1",
     "titre": "Aire de camping-cars",
     "geoloc": {
         "lat": 43.110185,
@@ -876,7 +882,7 @@
 
 "reshabjeunes": [{
     "id": "0",
-    "marqueur": "#B06876",
+    "marqueur": "1",
     "titre": "Résidence habitat jeunes",
     "geoloc": {
         "lat": 43.106278,
@@ -887,7 +893,7 @@
 
 "restaurants": [{
     "id": "0",
-    "marqueur": "#B62A79",
+    "marqueur": "1",
     "titre": "Restaurant L'Etable",
     "geoloc": {
         "lat": 43.098688,
@@ -896,7 +902,7 @@
 },
 {
     "id": "1",
-    "marqueur": "#B62A79",
+    "marqueur": "2",
     "titre": "Restaurant La Pyrène",
     "geoloc": {
         "lat": 43.108922,
@@ -905,7 +911,7 @@
 },
 {
     "id": "2",
-    "marqueur": "#B62A79",
+    "marqueur": "3",
     "titre": "Restaurant Le Beaurivage",
     "geoloc": {
         "lat": 43.098953,
@@ -914,7 +920,7 @@
 },
 {
     "id": "3",
-    "marqueur": "#B62A79",
+    "marqueur": "4",
     "titre": "Restaurant Le Commerce",
     "geoloc": {
         "lat": 43.110101,
@@ -923,7 +929,7 @@
 },
 {
     "id": "4",
-    "marqueur": "#B62A79",
+    "marqueur": "5",
     "titre": "Restaurant Le Français",
     "geoloc": {
         "lat": 43.107921,
@@ -932,7 +938,7 @@
 },
 {
     "id": "5",
-    "marqueur": "#B62A79",
+    "marqueur": "6",
     "titre": "Restaurant Le Mooréa",
     "geoloc": {
         "lat": 43.107406,
@@ -941,7 +947,7 @@
 },
 {
     "id": "6",
-    "marqueur": "#B62A79",
+    "marqueur": "7",
     "titre": "Restaurant Le Nouveau Bistrot",
     "geoloc": {
         "lat": 43.108192,
@@ -950,7 +956,7 @@
 },
 {
     "id": "7",
-    "marqueur": "#B62A79",
+    "marqueur": "8",
     "titre": "Restaurant Le Pédussaut",
     "geoloc": {
         "lat": 43.109573,
@@ -959,7 +965,7 @@
 },
 {
     "id": "8",
-    "marqueur": "#B62A79",
+    "marqueur": "9",
     "titre": "Restaurant Le Trèfle",
     "geoloc": {
         "lat": 43.081187,
@@ -971,7 +977,7 @@
 
 "patrimoine": [{
     "id": "0",
-    "marqueur": "#933F00",
+    "marqueur": "1",
     "titre": "Villa Gallo-Romaine de Montmaurin",
     "geoloc": {
         "lat": 43.216634,
@@ -980,7 +986,7 @@
 },
 {
     "id": "1",
-    "marqueur": "#933F00",
+    "marqueur": "2",
     "titre": "Notre Dame de Lorette à Alan",
     "geoloc": {
         "lat": 43.222474,
@@ -990,7 +996,7 @@
 },
 {
     "id": "2",
-    "marqueur": "#933F00",
+    "marqueur": "3",
     "titre": "Faïenceries de Martres-Tolosane",
     "geoloc": {
         "lat": 43.198444,
@@ -999,7 +1005,7 @@
 },
 {
     "id": "3",
-    "marqueur": "#933F00",
+    "marqueur": "4",
     "titre": "Abbaye de Bonnefont (en Comminges)",
     "geoloc": {
         "lat": 43.141431,
@@ -1008,7 +1014,7 @@
 },
 {
     "id": "4",
-    "marqueur": "#933F00",
+    "marqueur": "5",
     "titre": "Place Jean Jaurès à Saint-Gaudens",
     "geoloc": {
         "lat": 43.107923,
@@ -1017,7 +1023,7 @@
 },
 {
     "id": "5",
-    "marqueur": "#933F00",
+    "marqueur": "6",
     "titre": "Villa Gallo-Romaine de Valentine",
     "geoloc": {
         "lat": 43.092719,
@@ -1026,7 +1032,7 @@
 },
 {
     "id": "6",
-    "marqueur": "#933F00",
+    "marqueur": "7",
     "titre": "Château de Montespan à Montespan",
     "geoloc": {
         "lat": 43.087500,
@@ -1035,7 +1041,7 @@
 },
 {
     "id": "7",
-    "marqueur": "#933F00",
+    "marqueur": "8",
     "titre": "Chapelle de Miègecoste à Aspet",
     "geoloc": {
         "lat": 43.013724,
@@ -1044,7 +1050,7 @@
 },
 {
     "id": "8",
-    "marqueur": "#933F00",
+    "marqueur": "9",
     "titre": "Chapelle de Saint-Aventin à Saint-Aventin",
     "geoloc": {
         "lat": 42.804908,
@@ -1056,7 +1062,7 @@
 
 "lacs": [{
     "id": "0",
-    "marqueur": "#00129D",
+    "marqueur": "1",
     "titre": "Lac de la Gimone à Lunax",
     "geoloc": {
         "lat": 43.335406,
@@ -1065,7 +1071,7 @@
 },
 {
     "id": "1",
-    "marqueur": "#00129D",
+    "marqueur": "2",
     "titre": "Base de loisirs de Boulogne sur Gesse à Boulogne sur Gesse",
     "geoloc": {
         "lat": 43.283465,
@@ -1074,7 +1080,7 @@
 },
 {
     "id": "2",
-    "marqueur": "#00129D",
+    "marqueur": "3",
     "titre": "Lac de Sède à Saint-Gaudens",
     "geoloc": {
         "lat": 43.101076,
@@ -1083,7 +1089,7 @@
 },
 {
     "id": "3",
-    "marqueur": "#00129D",
+    "marqueur": "4",
     "titre": "Base de loisirs de Montréjeau à Montréjeau",
     "geoloc": {
         "lat": 43.078531,
@@ -1092,7 +1098,7 @@
 },
 {
     "id": "4",
-    "marqueur": "#00129D",
+    "marqueur": "5",
     "titre": "Lac d'Oô à Oô",
     "geoloc": {
         "lat": 42.739891,
@@ -1103,7 +1109,7 @@
 
 "offices": [{
     "id": "0",
-    "marqueur": "#CD5806",
+    "marqueur": "1",
     "titre": "Office de Tourisme de Boulogne sur Gesse",
     "geoloc": {
         "lat": 43.290880,
@@ -1112,7 +1118,7 @@
 },
 {
     "id": "1",
-    "marqueur": "#CD5806",
+    "marqueur": "2",
     "titre": "Office de Tourisme du canton d'Aurignac",
     "geoloc": {
         "lat": 43.217476,
@@ -1121,7 +1127,7 @@
 },
 {
     "id": "2",
-    "marqueur": "#CD5806",
+    "marqueur": "3",
     "titre": "Office de Tourisme du canton de Saint-Martory",
     "geoloc": {
         "lat": 43.143240,
@@ -1130,7 +1136,7 @@
 },
 {
     "id": "3",
-    "marqueur": "#CD5806",
+    "marqueur": "4",
     "titre": "Office de Tourisme de Salies-du Salat",
     "geoloc": {
         "lat": 43.103487,
@@ -1139,7 +1145,7 @@
 },
 {
     "id": "4",
-    "marqueur": "#CD5806",
+    "marqueur": "5",
     "titre": "SI Vallée de l'Arbas",
     "geoloc": {
         "lat": 42.996328,
@@ -1148,7 +1154,7 @@
 },
 {
     "id": "5",
-    "marqueur": "#CD5806",
+    "marqueur": "6",
     "titre": "SI d'Encausse-les-Thermes",
     "geoloc": {
         "lat": 43.050739,
@@ -1157,7 +1163,7 @@
 },
 {
     "id": "6",
-    "marqueur": "#CD5806",
+    "marqueur": "7",
     "titre": "SI de Barbazan",
     "geoloc": {
         "lat": 43.018426,
@@ -1166,7 +1172,7 @@
 },
 {
     "id": "7",
-    "marqueur": "#CD5806",
+    "marqueur": "8",
     "titre": "Office de Tourisme de Luchon",
     "geoloc": {
         "lat": 42.789462,
@@ -1175,7 +1181,7 @@
 },
 {
     "id": "8",
-    "marqueur": "#CD5806",
+    "marqueur": "9",
     "titre": "Office de Tourisme de Martres-Tolosane",
     "geoloc": {
         "lat": 43.199156,
@@ -1184,7 +1190,7 @@
 },
 {
     "id": "9",
-    "marqueur": "#CD5806",
+    "marqueur": "10",
     "titre": "Office intercommunal de Montréjeau",
     "geoloc": {
         "lat": 43.085100,

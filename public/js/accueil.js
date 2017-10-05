@@ -97,7 +97,8 @@ navigator.geolocation.watchPosition(
                  //marqueurs
                  var latOcre = data.ocre[i].geoloc.lat;
                  var longOcre = data.ocre[i].geoloc.lng;
-                 L.marker([latOcre,longOcre], {icon: L.AwesomeMarkers.icon({text: i, markerColor: 'orange', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                  var marqueur= data.ocre[i].marqueur;
+                 L.marker([latOcre,longOcre], {icon: L.AwesomeMarkers.icon({text: marqueur, markerColor: 'orange', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                  // var markersOcre = new Marker(data.ocre[i].marqueur, '#FF5200', "rgba(255, 82, 0, 0.5)", '#000');
                  // var latOcre = data.ocre[i].geoloc.lat;
                  // var longOcre = data.ocre[i].geoloc.lng;
@@ -118,7 +119,8 @@ navigator.geolocation.watchPosition(
                  //marqueurs
                  var latVert = data.vert[i].geoloc.lat;
                  var longVert = data.vert[i].geoloc.lng;
-                 L.marker([latVert, longVert], {icon: L.AwesomeMarkers.icon({text: i, markerColor: '#00AE68', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 var marqueur= data.vert[i].marqueur; 
+                 L.marker([latVert, longVert], {icon: L.AwesomeMarkers.icon({text: marqueur, markerColor: 'green', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
 
 
@@ -126,14 +128,16 @@ navigator.geolocation.watchPosition(
                  //marqueurs
                  var latAnnexe = data.annexes[i].geoloc.lat;
                  var longAnnexe = data.annexes[i].geoloc.lng;
-                 L.marker([latAnnexe, longAnnexe], {icon: L.AwesomeMarkers.icon({text: i, markerColor: 'jaune', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                  var marqueurs= data.annexes[i].marqueur;
+                 L.marker([latAnnexe, longAnnexe], {icon: L.AwesomeMarkers.icon({text: marqueurs, markerColor: 'purple', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
 
                 for (i = 0; i < data.etoiles.length; i++) {
                  //marqueurs
                  var latEtoile = data.etoiles[i].geoloc.lat;
                  var longEtoile = data.etoiles[i].geoloc.lng;
-                 L.marker([latEtoile, longEtoile], {icon: L.AwesomeMarkers.icon({icon: 'star', markerColor: 'rose', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
+                 var color= data.etoiles[i].couleur;
+                 L.marker([latEtoile, longEtoile], {icon: L.AwesomeMarkers.icon({icon: 'star', markerColor: 'yellow', prefix: 'fa', iconColor: 'black'}) }).addTo(map);
                 };
 
                map.on('fullscreenchange', function() {
