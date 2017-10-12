@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+  <meta name="theme-color" content="#C1E2DE">
+  
+  <title>Mémoire en cache test</title>
+  
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  
+  <!--<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css"/>-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+  <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.mapbox.css' rel='stylesheet' />
+  <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/css/font-awesome.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css"/>
+  <link rel="stylesheet" href="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css"/>
+  
+  <link rel="stylesheet" href="vex-3.0.0/dist/css/vex.css"/>
+  <link rel="stylesheet" href="vex-3.0.0/dist/css/vex-theme-os.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  
+  <link rel="stylesheet" href="css/style.css"/>
+  
+  <link rel="manifest" href="manifest.json"/>
+  
+  <script async>
+    function loadCSS(e,t,n){
+      "use strict";
+      function r() {for(var t, i=0; i<d.length; i++)d[i].href&&d[i].href.indexOf(e)>-1&&(t=!0);t?o.media=n||"all":setTimeout(r)}var o=window.document.createElement("link"),i=t||window.document.getElementsByTagName("script")[0],d=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x", i.parentNode.insertBefore(o,i),r(),o
+    }
+  </script>
+  <script async>
+    loadCSS("css/main.css");
+    loadCSS("css/style.css");
+  </script>
+
+
+</head>
+
+<body class="fluid-container">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img id="logo" src="assets/image/saingo.png" class="img-fluid" alt="Responsive image">
+    </nav>
+  </header>
+
+
+  <div class="row">
+    <div class="col-12">Evènements</div>
+  </div>
+
+  <script type="text/javascript" async>
+    if ("serviceWorker" in navigator){
+      //enregistrement du serviceWorker sw.js
+      //avec comme scope '/' (racine);
+      navigator.serviceWorker.register("sw.js", { scope: '/'})
+      //si c'est bon...
+      .then(function(reg){
+        console.log("Registration succeeded. Scope is" + reg.scope);
+      })
+      // si ce n'est pas bon...
+      .catch(function(error){
+        console.log("Registration failed with" + error);
+      });
+    };
+  </script>
+
+ 
+
+ <div class="menu">
+ <button type="button" class="btn btn-secondary dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégories
+ <span class="caret"></span>
+ </button> 
+  <ul class="dropdown-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="evenement.html">Evènements</a></li>
+      <li><a href="territoire.html">Carte territoire</a></li>
+      <li><a href="manger.html">Où manger - Où dormir</a></li>
+      <li><a href="infos.html">Infos pratiques</a></li>
+    </ul>
+
+  </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" async></script>
+    <!-- <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" async></script>
+    <script type='text/javascript' src="http://rawgit.com/jasonday/jQuery-UI-Dialog-extended/master/jquery.dialogOptions.js" async></script> -->
+
+    <!--<script type='text/javascript' src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>-->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js'></script>
+    <script type='text/javascript' src="http://watson.lennardvoogdt.nl/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
+    <!-- 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" async></script>
+     -->
+    <script src="js/territoire.js" async></script>
+    
+    
+    <script src="main.58fec847.js" async></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous" async></script>
+    
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous" async></script>
+
+
+</body>
+
+</html>
