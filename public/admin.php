@@ -25,19 +25,37 @@
 	</header>
 
 	<div class="container" id="connect">
+		
 		<img src="assets/image/System-users.png" class="img-fluid" alt="Responsive image">
-		<form>
+		
+		<form method="POST" action="formevent.php" onsubmit="return Validate()" name="vform">
 			<div class="font-input">
 				<input type="text" name="username" id="nom" placeholder="Entrez votre nom d'utilisateur">
+				<div id="name_error" class="val_error"></div>
 			</div>
+
+			<div class="font-input">
+				<input type="email" name="email" id="pli" placeholder="Entrez votre adresse mail">
+				<div id="email_error" class="val_error"></div>
+			</div>
+			
 			<div class="font-input">
 				<input type="password" name="password" id="mdp" placeholder="Entrez votre mot de passe">
+			</div>
+
+			<div class="font-input">
+				<input type="password" name="password_confirmation" id="mdp2" placeholder="Confirmez votre mot de passe">
+				<div id="password_error" class="val_error"></div>
 			</div><br>
+			
 			<input type="submit" name="submit" 
 			value="Login" class="btn-login"><br>
+			
 			<a href="#"><p>Mot de passe oublié</p></a>
-		</div>
-	</form><br>
+
+
+		</form>
+	</div><br><br>
 
 	<div class="menu">
 		<button type="button" class="btn btn-secondary dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégories
@@ -49,14 +67,14 @@
 			<li><a href="territoire.html">Carte territoire</a></li>
 			<li><a href="manger.html">Où manger - Où dormir</a></li>
 			<li><a href="infos.html">Infos pratiques</a></li>
-			<li><a href="admin.html">Admin</a></li>
+			<li><a href="admin.php">Admin</a></li>
 		</ul>
 
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" async></script>
 	
-	<script src="js/event.js" async></script>
+	<script src="js/event.php" async></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous" async></script>
 

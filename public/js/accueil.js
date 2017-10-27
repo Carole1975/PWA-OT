@@ -1,36 +1,24 @@
 (function(){
   console.log("map");
 
-   
- var app = {
+  
+  var app = {
     init: function() {
       this.url = "https://raw.githubusercontent.com/Carole1975/PWA-OT/master/public/data/galerie.json";
       this.getGalerie(app.url);
     },
 
     getGalerie: function(url) {
-          //   $.ajax({
-          //       url: url,
-          //       success: this.initmap,
-          //       error: function(err) {
-          //           if (err) {
-          //               console.log(err);
-          //           };
-          //       }
-          //   });
-          // },
-
-          fetch('../data/galerie.json')
-            // .then((data) => {
-            //   this.initmap(data);
-            // })
-            .then(  
-              function(response) {  
-                if (response.status !== 200) {  
-                  console.log('Looks like there was a problem. Status Code: ' +  
-                    response.status);  
-                  return;  
-                }
+      
+      fetch('../data/galerie.json')
+      
+      .then(  
+        function(response) {  
+          if (response.status !== 200) {  
+            console.log('Looks like there was a problem. Status Code: ' +  
+              response.status);  
+            return;  
+          }
 
             // Examine the text in the response  
             response.json().then(function(data) {  
@@ -77,28 +65,13 @@
                 L.marker([latOcre,longOcre], {icon: L.AwesomeMarkers.icon({text: marqueur, markerColor: 'orange', prefix: 'fa', iconColor: 'black'}) })
                 .bindPopup(contentPopupOcre)
                 .addTo(map);
-                 // var markersOcre = new Marker(data.ocre[i].marqueur, '#FF5200', "rgba(255, 82, 0, 0.5)", '#000');
-                 // var latOcre = data.ocre[i].geoloc.lat;
-                 // var longOcre = data.ocre[i].geoloc.lng;
-                 // markersOcre = L.marker([latOcre, longOcre], {
-                 //   icon: L.BeautifyIcon.icon({
-                 //     iconSize: markersOcre.iconSize,
-                 //     borderColor: markersOcre.borderColor,
-                 //     backgroundColor: markersOcre.backgroundColor,
-                 //     isAlphaNumericIcon: markersOcre.isAlphaNumericIcon,
-                 //     text: markersOcre.text,
-                 //     textColor: markersOcre.textColor,
-                 //     innerIconStyle: markersOcre.innerIconStyle
-                 //   })
-                 // }).addTo(map);
 
-                 
-               };
+              };
 
-               
+              
 
 
-               for (i = 0; i < data.vert.length; i++) {
+              for (i = 0; i < data.vert.length; i++) {
                  //marqueurs
                  var latVert = data.vert[i].geoloc.lat;
                  var longVert = data.vert[i].geoloc.lng;
@@ -184,17 +157,17 @@
 },
 
 
-      
-
-    };
 
 
+};
 
-    
 
 
-    app.init();
-  })();
+
+
+
+app.init();
+})();
 
 
 
