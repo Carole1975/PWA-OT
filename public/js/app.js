@@ -1,15 +1,6 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('evenements', 'root', 'simplon01', {
-	host: 'localhost',
-	dialect: 'mysql',
-
-	pool: {
-		max: 5,
-		min: 0,
-		idle: 1000
-	},
-});
+const sequelize = new Sequelize('mysql://enkxjvk8wef144dg:o4gyka44chnqkbr0@gzp0u91edhmxszwf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/dpxbvt128zo10653');
 
 sequelize
 .authenticate()
@@ -20,25 +11,54 @@ sequelize
 	console.error('Unable to connect to the database:', err);
 });
 
-const User = sequelize.define('user', {
-	firstName: {
-		type: Sequelize.STRING
-	},
-	lastName: {
-		type: Sequelize.STRING
-	}
+// const User = sequelize.define('user', {
+// 	firstName: {
+// 		type: Sequelize.STRING
+// 	},
+// 	lastName: {
+// 		type: Sequelize.STRING
+// 	}
+// });
+
+const Location = sequelize.define('location', {
+	titre: Sequelize.STRING,
+	texte: Sequelize.STRING,
+	marqueur: Sequelize.INTEGER,
+	lat: Sequelize.FLOAT,
+	lng: Sequelize.FLOAT
+}, {
+    timestamps: false,
+    createdAt: false,
+    updatedAt: false
 });
 
-User.sync({force:true}).then(() => {
-	//Table created
-	return User.create({
-		firstName: 'John',
-		lastName: 'Hancock'
-	});
-});
+let location1 = {
+	titre : "Test",
+	texte : "Test de location",
+	marqueur: 2,
+	lat: 1.00000,
+	lng: 2.00000,
+}
 
-User.findAll().then(users => {
-	console.log(users)
+Location.create(location1).then(location => {
+	console.log(`Location created successfully : ${location}`);
 })
 
-module.exports = {User};
+Location.findAll().then(locations => {
+	console.log(locations)
+});
+
+
+// User.sync({force:true}).then(() => {
+// 	//Table created
+// 	return User.create({
+// 		firstName: 'John',
+// 		lastName: 'Hancock'
+// 	});
+// });
+
+// User.findAll().then(users => {
+// 	console.log(users)
+// })
+
+// module.exports = {User};
