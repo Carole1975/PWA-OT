@@ -1,4 +1,4 @@
-$(document).ready(function(){
+(function(){
 	console.log("map2");
 
 	var username = document.forms["vform"]["username"];

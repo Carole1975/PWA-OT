@@ -28,8 +28,8 @@
 		</nav>
 	</header>
 
-	<div class="container">
-		<form method="post" action="evenement.html" class="form-horizontal" id="eventForm" onsubmit="return Validate()" name="newform">
+	<div class="container" id="complet">
+		<form action="evenement.html" class="form-horizontal" id="eventForm" onsubmit="return Validate()" name="newform">
 			
 			<!--<div class="form-group">
 				<label class="col-xs-3 control-label">Evènement</label>
@@ -38,7 +38,7 @@
 				</div>
 			</div>-->
 			<div class="font-input">Evènement
-				<label class="col-xs-4 control-label"></label>
+				<label class="col-xs-0 control-label"></label>
 				<input type="text" name="manif" id="nom">
 			</div><br>
 
@@ -60,6 +60,11 @@
 				</div>
 			</div> 
 
+            <div class="font-input">Heure
+            <label class="col-xs-0 control-label"></label>
+			<input type="text" name="timepicker" class="timepicker"/>
+			</div>
+
 
 
 			<!--<div class="form-group">
@@ -69,7 +74,7 @@
 				</div>
 			</div><br>-->
 			<div class="font-input">Lieux
-				<label class="col-xs-4 control-label"></label>
+				<label class="col-xs-0 control-label"></label>
 				<input type="text" name="ou" id="nom">
 			</div><br>
 
@@ -102,7 +107,7 @@
 			<li><a href="territoire.html">Carte territoire</a></li>
 			<li><a href="manger.html">Où manger - Où dormir</a></li>
 			<li><a href="infos.html">Infos pratiques</a></li>
-			<li><a href="admin.php">Admin</a></li>
+			<li><a href="admin.html">Admin</a></li>
 		</ul>
 
 	</div>  
@@ -110,7 +115,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" async></script>
 	<script src="https://raw.githubusercontent.com/formvalidation/formvalidation.io/master/vendor/formvalidation/js/formValidation.min.js" async></script>
 
-	<script src="js/formevents2.php" async></script>
+	<script src="js/formevents2.js" async></script>
 
 
 	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js" async></script>

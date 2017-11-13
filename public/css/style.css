@@ -124,4 +124,14 @@ a{
 
 }
 
+#complet{
+  width: 1000px;
+  height: 900px;
+  text-align: center;
+  background-color: rgba(52, 73,94, 0.7);
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
 

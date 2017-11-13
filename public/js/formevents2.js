@@ -25,6 +25,7 @@ $(document).ready(function() {
             $('#eventForm').formValidation('revalidateField', 'date');
         });
 
+
     $('#eventForm').formValidation({
         framework: 'bootstrap',
         icon: {
@@ -53,4 +54,5 @@ $(document).ready(function() {
             }
         }
     });
+
 });
