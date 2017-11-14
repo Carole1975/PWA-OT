@@ -29,7 +29,7 @@
 	</header>
 
 	<div class="container" id="complet">
-		<form action="js/locationCreate.js" class="form-horizontal" id="eventForm" onsubmit="return Validate()" name="newform">
+		<form action="location-create" method="post" class="form-horizontal" id="eventForm" name="location-create-form">
 			
 			<!--<div class="form-group">
 				<label class="col-xs-3 control-label">Evènement</label>
@@ -38,12 +38,10 @@
 				</div>
 			</div>-->
 			<div class="font-input">Titre
-				<label class="col-xs-0 control-label"></label>
 				<input type="text" name="titre" id="titre">
 			</div><br>
 
-			<div class="form-group">
-				<!--<label class="col-xs-1 control-label">Date du</label>-->
+			<!-- <div class="form-group">
 				<label class="col-xs-3 control-label"></label>
 				<div class="col-xs-3 date">
 					<div class="input-group input-append date" id="datePicker">Date du
@@ -51,7 +49,7 @@
 						<span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
 					</div>
 				</div>
-				<!--<label class="col-xs-2 control-label">au</label>-->
+				<label class="col-xs-2 control-label">au</label>
 				<div class="col-xs-3 date">
 					<div class="input-group input-append date" id="datePickers">au
 						<input type="text" class="form-control" name="date_fin"/>
@@ -64,7 +62,7 @@
             <label class="col-xs-0 control-label"></label>
 			<input type="text" name="timepicker" class="timepicker"/>
 			</div>
-
+ -->
 
 
 			<!--<div class="form-group">
@@ -73,7 +71,9 @@
 					<input type="text" class="form-control" name="name"/>
 				</div>
 			</div><br>-->
-			<div class="font-input">Lieux
+
+			
+			<!-- <div class="font-input">Lieux
 				<label class="col-xs-0 control-label"></label>
 				<input type="text" name="ou" id="nom">
 			</div><br>
@@ -84,12 +84,12 @@
 					<label for="exampleTextarea">Description</label>
 					<textarea class="form-control" id="exampleTextarea" name="resume" rows="3"></textarea>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="form-group">
 				<label class="col-xs-5 control-label"></label>
 				<div class="col-xs-5 col-xs-offset-3">
-					<button type="submit" class="btn btn-default">Valider</button>
+					<input type="submit" class="btn btn-default"/>
 				</div>
 			</div>
 
