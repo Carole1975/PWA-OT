@@ -64,6 +64,10 @@ app.post('/location-create', function(req, res, next) {
 	res.send(`Location créée: ${req.body.titre}`);
 });
 
+
+
+
 app.listen(port, function () {
 	console.log(`Example app listening on port ${port}!`);
 });
+

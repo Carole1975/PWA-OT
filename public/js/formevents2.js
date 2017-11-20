@@ -1,10 +1,6 @@
 $(document).ready(function() {
 
-    var manif = document.forms["newform"]["manif"];
-    var date = document.forms["newform"]["date"];
-    var date_fin = document.forms["newform"]["date_fin"];
-    var ou = document.forms["newform"]["ou"];
-    var resume = document.forms["newform"]["resume"];
+   
 
     
     $('#datePicker')
@@ -13,7 +9,7 @@ $(document).ready(function() {
     })
     .on('changeDate', function(e) {
             // Revalidate the date field
-            $('#eventForm').formValidation('revalidateField', 'date');
+            $('#eventForm1').formValidation('revalidateField', 'date');
         });
 
     $('#datePickers')
@@ -22,11 +18,11 @@ $(document).ready(function() {
     })
     .on('changeDate', function(e) {
             // Revalidate the date field
-            $('#eventForm').formValidation('revalidateField', 'date');
+            $('#eventForm1').formValidation('revalidateField', 'date');
         });
 
 
-    $('#eventForm').formValidation({
+    $('#eventForm1').formValidation({
         framework: 'bootstrap',
         icon: {
             valid: 'glyphicon glyphicon-ok',
@@ -55,4 +51,8 @@ $(document).ready(function() {
         }
     });
 
+    $("input[name='myTime']").timeInput(); // use default or html5 attributes
+    $("input[name='myTime2']").timeInput({min: "6:00", max: "15:00", step: 900});
+
+    
 });
